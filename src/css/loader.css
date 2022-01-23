@@ -11,7 +11,7 @@ html{
 .spinner-wrapper{
     width: 100%;
     height: 100%;
-    background-color: #151515;
+    background-color: #344051;
     position: absolute;
     top: 0;
     left: 0;
@@ -19,7 +19,9 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: opacitytwrapper 1s ease forwards;
 }
+
 
 .spinner {
     position: relative;
@@ -44,7 +46,7 @@ html{
 .spinner:after {
     width: 90%;
     height: 90%;
-    background-color: #151515;
+    background-color: #344051;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -55,4 +57,13 @@ html{
         transform: rotate(360deg);
     }
 
+}
+
+@keyframes opacitytwrapper{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
 }
